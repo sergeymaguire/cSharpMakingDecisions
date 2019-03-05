@@ -11,12 +11,7 @@ namespace cSharpMakingDecisions
         static void Main(string[] args)
         {
 
-           // const int HIGH = 10, LOW = 5;
-           //// int number;
-            //Console.Write("Enter a number: ");
-            //numberString = Console.ReadLine();
-            //number = Convert.ToInt32(numberString);
-            //integerDecison(HIGH, LOW, number);
+            integerdecison();
             string numbersString;
             int counter = 1;
             int num1, num2, num3;
@@ -50,19 +45,27 @@ namespace cSharpMakingDecisions
             
         }
 
-        //private static void integerDecison(int HIGH, int LOW, int number)
-       // {
-           // if (number < HIGH)
-          //  {
-             //   Console.WriteLine("{0} is between {1} and {2}.", number, LOW, HIGH);
-             //   Console.ReadLine();
-          //  }
-           // else if (number >= HIGH)
-           // {
-             //   Console.WriteLine("{0} is not between {1} and {2}.", number, LOW, HIGH);
-               // Console.ReadLine();
-           // }
-       // }
-      
+        private static void integerdecison()
+        {
+            const int high = 10, low = 5;
+            int number;
+            Console.Write("enter a number: ");
+            string numberstring = Console.ReadLine();
+            number = Convert.ToInt32(numberstring);
+           
+
+            if (number < high)
+
+            {
+                Console.WriteLine("{0} is between {1} and {2}.", number, low, high);
+                Console.ReadLine();
+            }
+            else if (number >= high)
+            {
+                Console.WriteLine("{0} is not between {1} and {2}.", number, low, high);
+                Console.ReadLine();
+            }
+        }
+
     }
 }
